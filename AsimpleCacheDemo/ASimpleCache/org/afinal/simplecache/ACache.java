@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2012-2013, Michael Yang æ¨ç¦æµ· (www.yangfuhai.com).
+ * Copyright (c) 2012-2013, Michael Yang Ñî¸£º£ (www.yangfuhai.com).
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,13 +52,13 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
 /**
- * @author Michael Yangï¼ˆwww.yangfuhai.comï¼‰ update at 2013.08.07
+ * @author Michael Yang£¨www.yangfuhai.com£© update at 2013.08.07
  */
 public class ACache {
 	public static final int TIME_HOUR = 60 * 60;
 	public static final int TIME_DAY = TIME_HOUR * 24;
 	private static final int MAX_SIZE = 1000 * 1000 * 50; // 50 mb
-	private static final int MAX_COUNT = Integer.MAX_VALUE; // ä¸é™åˆ¶å­˜æ”¾æ•°æ®çš„æ•°é‡
+	private static final int MAX_COUNT = Integer.MAX_VALUE; // ²»ÏŞÖÆ´æ·ÅÊı¾İµÄÊıÁ¿
 	private static Map<String, ACache> mInstanceMap = new HashMap<String, ACache>();
 	private ACacheManager mCache;
 
@@ -125,15 +125,15 @@ public class ACache {
 	}
 
 	// =======================================
-	// ============ Stringæ•°æ® è¯»å†™ ==============
+	// ============ StringÊı¾İ ¶ÁĞ´ ==============
 	// =======================================
 	/**
-	 * ä¿å­˜ Stringæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ StringÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„Stringæ•°æ®
+	 *            ±£´æµÄStringÊı¾İ
 	 */
 	public void put(String key, String value) {
 		File file = mCache.newFile(key);
@@ -157,24 +157,24 @@ public class ACache {
 	}
 
 	/**
-	 * ä¿å­˜ Stringæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ StringÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„Stringæ•°æ®
+	 *            ±£´æµÄStringÊı¾İ
 	 * @param saveTime
-	 *            ä¿å­˜çš„æ—¶é—´ï¼Œå•ä½ï¼šç§’
+	 *            ±£´æµÄÊ±¼ä£¬µ¥Î»£ºÃë
 	 */
 	public void put(String key, String value, int saveTime) {
 		put(key, Utils.newStringWithDateInfo(saveTime, value));
 	}
 
 	/**
-	 * è¯»å– Stringæ•°æ®
+	 * ¶ÁÈ¡ StringÊı¾İ
 	 * 
 	 * @param key
-	 * @return String æ•°æ®
+	 * @return String Êı¾İ
 	 */
 	public String getAsString(String key) {
 		File file = mCache.get(key);
@@ -212,39 +212,39 @@ public class ACache {
 	}
 
 	// =======================================
-	// ============= JSONObject æ•°æ® è¯»å†™ ==============
+	// ============= JSONObject Êı¾İ ¶ÁĞ´ ==============
 	// =======================================
 	/**
-	 * ä¿å­˜ JSONObjectæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ JSONObjectÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„JSONæ•°æ®
+	 *            ±£´æµÄJSONÊı¾İ
 	 */
 	public void put(String key, JSONObject value) {
 		put(key, value.toString());
 	}
 
 	/**
-	 * ä¿å­˜ JSONObjectæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ JSONObjectÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„JSONObjectæ•°æ®
+	 *            ±£´æµÄJSONObjectÊı¾İ
 	 * @param saveTime
-	 *            ä¿å­˜çš„æ—¶é—´ï¼Œå•ä½ï¼šç§’
+	 *            ±£´æµÄÊ±¼ä£¬µ¥Î»£ºÃë
 	 */
 	public void put(String key, JSONObject value, int saveTime) {
 		put(key, value.toString(), saveTime);
 	}
 
 	/**
-	 * è¯»å–JSONObjectæ•°æ®
+	 * ¶ÁÈ¡JSONObjectÊı¾İ
 	 * 
 	 * @param key
-	 * @return JSONObjectæ•°æ®
+	 * @return JSONObjectÊı¾İ
 	 */
 	public JSONObject getAsJSONObject(String key) {
 		String JSONString = getAsString(key);
@@ -258,39 +258,39 @@ public class ACache {
 	}
 
 	// =======================================
-	// ============ JSONArray æ•°æ® è¯»å†™ =============
+	// ============ JSONArray Êı¾İ ¶ÁĞ´ =============
 	// =======================================
 	/**
-	 * ä¿å­˜ JSONArrayæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ JSONArrayÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„JSONArrayæ•°æ®
+	 *            ±£´æµÄJSONArrayÊı¾İ
 	 */
 	public void put(String key, JSONArray value) {
 		put(key, value.toString());
 	}
 
 	/**
-	 * ä¿å­˜ JSONArrayæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ JSONArrayÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„JSONArrayæ•°æ®
+	 *            ±£´æµÄJSONArrayÊı¾İ
 	 * @param saveTime
-	 *            ä¿å­˜çš„æ—¶é—´ï¼Œå•ä½ï¼šç§’
+	 *            ±£´æµÄÊ±¼ä£¬µ¥Î»£ºÃë
 	 */
 	public void put(String key, JSONArray value, int saveTime) {
 		put(key, value.toString(), saveTime);
 	}
 
 	/**
-	 * è¯»å–JSONArrayæ•°æ®
+	 * ¶ÁÈ¡JSONArrayÊı¾İ
 	 * 
 	 * @param key
-	 * @return JSONArrayæ•°æ®
+	 * @return JSONArrayÊı¾İ
 	 */
 	public JSONArray getAsJSONArray(String key) {
 		String JSONString = getAsString(key);
@@ -304,15 +304,15 @@ public class ACache {
 	}
 
 	// =======================================
-	// ============== byte æ•°æ® è¯»å†™ =============
+	// ============== byte Êı¾İ ¶ÁĞ´ =============
 	// =======================================
 	/**
-	 * ä¿å­˜ byteæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ byteÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„æ•°æ®
+	 *            ±£´æµÄÊı¾İ
 	 */
 	public void put(String key, byte[] value) {
 		File file = mCache.newFile(key);
@@ -364,24 +364,24 @@ public class ACache {
 	}
 
 	/**
-	 * ä¿å­˜ byteæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ byteÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„æ•°æ®
+	 *            ±£´æµÄÊı¾İ
 	 * @param saveTime
-	 *            ä¿å­˜çš„æ—¶é—´ï¼Œå•ä½ï¼šç§’
+	 *            ±£´æµÄÊ±¼ä£¬µ¥Î»£ºÃë
 	 */
 	public void put(String key, byte[] value, int saveTime) {
 		put(key, Utils.newByteArrayWithDateInfo(saveTime, value));
 	}
 
 	/**
-	 * è·å– byte æ•°æ®
+	 * »ñÈ¡ byte Êı¾İ
 	 * 
 	 * @param key
-	 * @return byte æ•°æ®
+	 * @return byte Êı¾İ
 	 */
 	public byte[] getAsBinary(String key) {
 		RandomAccessFile RAFile = null;
@@ -416,29 +416,29 @@ public class ACache {
 	}
 
 	// =======================================
-	// ============= åºåˆ—åŒ– æ•°æ® è¯»å†™ ===============
+	// ============= ĞòÁĞ»¯ Êı¾İ ¶ÁĞ´ ===============
 	// =======================================
 	/**
-	 * ä¿å­˜ Serializableæ•°æ® åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ SerializableÊı¾İ µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„value
+	 *            ±£´æµÄvalue
 	 */
 	public void put(String key, Serializable value) {
 		put(key, value, -1);
 	}
 
 	/**
-	 * ä¿å­˜ Serializableæ•°æ®åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ SerializableÊı¾İµ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„value
+	 *            ±£´æµÄvalue
 	 * @param saveTime
-	 *            ä¿å­˜çš„æ—¶é—´ï¼Œå•ä½ï¼šç§’
+	 *            ±£´æµÄÊ±¼ä£¬µ¥Î»£ºÃë
 	 */
 	public void put(String key, Serializable value, int saveTime) {
 		ByteArrayOutputStream baos = null;
@@ -464,10 +464,10 @@ public class ACache {
 	}
 
 	/**
-	 * è¯»å– Serializableæ•°æ®
+	 * ¶ÁÈ¡ SerializableÊı¾İ
 	 * 
 	 * @param key
-	 * @return Serializable æ•°æ®
+	 * @return Serializable Êı¾İ
 	 */
 	public Object getAsObject(String key) {
 		byte[] data = getAsBinary(key);
@@ -502,39 +502,39 @@ public class ACache {
 	}
 
 	// =======================================
-	// ============== bitmap æ•°æ® è¯»å†™ =============
+	// ============== bitmap Êı¾İ ¶ÁĞ´ =============
 	// =======================================
 	/**
-	 * ä¿å­˜ bitmap åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ bitmap µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„bitmapæ•°æ®
+	 *            ±£´æµÄbitmapÊı¾İ
 	 */
 	public void put(String key, Bitmap value) {
 		put(key, Utils.Bitmap2Bytes(value));
 	}
 
 	/**
-	 * ä¿å­˜ bitmap åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ bitmap µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„ bitmap æ•°æ®
+	 *            ±£´æµÄ bitmap Êı¾İ
 	 * @param saveTime
-	 *            ä¿å­˜çš„æ—¶é—´ï¼Œå•ä½ï¼šç§’
+	 *            ±£´æµÄÊ±¼ä£¬µ¥Î»£ºÃë
 	 */
 	public void put(String key, Bitmap value, int saveTime) {
 		put(key, Utils.Bitmap2Bytes(value), saveTime);
 	}
 
 	/**
-	 * è¯»å– bitmap æ•°æ®
+	 * ¶ÁÈ¡ bitmap Êı¾İ
 	 * 
 	 * @param key
-	 * @return bitmap æ•°æ®
+	 * @return bitmap Êı¾İ
 	 */
 	public Bitmap getAsBitmap(String key) {
 		if (getAsBinary(key) == null) {
@@ -544,39 +544,39 @@ public class ACache {
 	}
 
 	// =======================================
-	// ============= drawable æ•°æ® è¯»å†™ =============
+	// ============= drawable Êı¾İ ¶ÁĞ´ =============
 	// =======================================
 	/**
-	 * ä¿å­˜ drawable åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ drawable µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„drawableæ•°æ®
+	 *            ±£´æµÄdrawableÊı¾İ
 	 */
 	public void put(String key, Drawable value) {
 		put(key, Utils.drawable2Bitmap(value));
 	}
 
 	/**
-	 * ä¿å­˜ drawable åˆ° ç¼“å­˜ä¸­
+	 * ±£´æ drawable µ½ »º´æÖĞ
 	 * 
 	 * @param key
-	 *            ä¿å­˜çš„key
+	 *            ±£´æµÄkey
 	 * @param value
-	 *            ä¿å­˜çš„ drawable æ•°æ®
+	 *            ±£´æµÄ drawable Êı¾İ
 	 * @param saveTime
-	 *            ä¿å­˜çš„æ—¶é—´ï¼Œå•ä½ï¼šç§’
+	 *            ±£´æµÄÊ±¼ä£¬µ¥Î»£ºÃë
 	 */
 	public void put(String key, Drawable value, int saveTime) {
 		put(key, Utils.drawable2Bitmap(value), saveTime);
 	}
 
 	/**
-	 * è¯»å– Drawable æ•°æ®
+	 * ¶ÁÈ¡ Drawable Êı¾İ
 	 * 
 	 * @param key
-	 * @return Drawable æ•°æ®
+	 * @return Drawable Êı¾İ
 	 */
 	public Drawable getAsDrawable(String key) {
 		if (getAsBinary(key) == null) {
@@ -586,10 +586,10 @@ public class ACache {
 	}
 
 	/**
-	 * è·å–ç¼“å­˜æ–‡ä»¶
+	 * »ñÈ¡»º´æÎÄ¼ş
 	 * 
 	 * @param key
-	 * @return value ç¼“å­˜çš„æ–‡ä»¶
+	 * @return value »º´æµÄÎÄ¼ş
 	 */
 	public File file(String key) {
 		File f = mCache.newFile(key);
@@ -599,25 +599,25 @@ public class ACache {
 	}
 
 	/**
-	 * ç§»é™¤æŸä¸ªkey
+	 * ÒÆ³ıÄ³¸ökey
 	 * 
 	 * @param key
-	 * @return æ˜¯å¦ç§»é™¤æˆåŠŸ
+	 * @return ÊÇ·ñÒÆ³ı³É¹¦
 	 */
 	public boolean remove(String key) {
 		return mCache.remove(key);
 	}
 
 	/**
-	 * æ¸…é™¤æ‰€æœ‰æ•°æ®
+	 * Çå³ıËùÓĞÊı¾İ
 	 */
 	public void clear() {
 		mCache.clear();
 	}
 
 	/**
-	 * @title ç¼“å­˜ç®¡ç†å™¨
-	 * @author æ¨ç¦æµ·ï¼ˆmichaelï¼‰ www.yangfuhai.com
+	 * @title »º´æ¹ÜÀíÆ÷
+	 * @author Ñî¸£º££¨michael£© www.yangfuhai.com
 	 * @version 1.0
 	 */
 	public class ACacheManager {
@@ -638,7 +638,7 @@ public class ACache {
 		}
 
 		/**
-		 * è®¡ç®— cacheSizeå’ŒcacheCount
+		 * ¼ÆËã cacheSizeºÍcacheCount
 		 */
 		private void calculateCacheSizeAndCacheCount() {
 			new Thread(new Runnable() {
@@ -713,7 +713,7 @@ public class ACache {
 		}
 
 		/**
-		 * ç§»é™¤æ—§çš„æ–‡ä»¶
+		 * ÒÆ³ı¾ÉµÄÎÄ¼ş
 		 * 
 		 * @return
 		 */
@@ -753,27 +753,27 @@ public class ACache {
 	}
 
 	/**
-	 * @title æ—¶é—´è®¡ç®—å·¥å…·ç±»
-	 * @author æ¨ç¦æµ·ï¼ˆmichaelï¼‰ www.yangfuhai.com
+	 * @title Ê±¼ä¼ÆËã¹¤¾ßÀà
+	 * @author Ñî¸£º££¨michael£© www.yangfuhai.com
 	 * @version 1.0
 	 */
 	private static class Utils {
 
 		/**
-		 * åˆ¤æ–­ç¼“å­˜çš„Stringæ•°æ®æ˜¯å¦åˆ°æœŸ
+		 * ÅĞ¶Ï»º´æµÄStringÊı¾İÊÇ·ñµ½ÆÚ
 		 * 
 		 * @param str
-		 * @return trueï¼šåˆ°æœŸäº† falseï¼šè¿˜æ²¡æœ‰åˆ°æœŸ
+		 * @return true£ºµ½ÆÚÁË false£º»¹Ã»ÓĞµ½ÆÚ
 		 */
 		private static boolean isDue(String str) {
 			return isDue(str.getBytes());
 		}
 
 		/**
-		 * åˆ¤æ–­ç¼“å­˜çš„byteæ•°æ®æ˜¯å¦åˆ°æœŸ
+		 * ÅĞ¶Ï»º´æµÄbyteÊı¾İÊÇ·ñµ½ÆÚ
 		 * 
 		 * @param data
-		 * @return trueï¼šåˆ°æœŸäº† falseï¼šè¿˜æ²¡æœ‰åˆ°æœŸ
+		 * @return true£ºµ½ÆÚÁË false£º»¹Ã»ÓĞµ½ÆÚ
 		 */
 		private static boolean isDue(byte[] data) {
 			String[] strs = getDateInfoFromDate(data);
@@ -859,7 +859,7 @@ public class ACache {
 		}
 
 		/*
-		 * Bitmap â†’ byte[]
+		 * Bitmap ¡ú byte[]
 		 */
 		private static byte[] Bitmap2Bytes(Bitmap bm) {
 			if (bm == null) {
@@ -871,7 +871,7 @@ public class ACache {
 		}
 
 		/*
-		 * byte[] â†’ Bitmap
+		 * byte[] ¡ú Bitmap
 		 */
 		private static Bitmap Bytes2Bimap(byte[] b) {
 			if (b.length == 0) {
@@ -881,29 +881,29 @@ public class ACache {
 		}
 
 		/*
-		 * Drawable â†’ Bitmap
+		 * Drawable ¡ú Bitmap
 		 */
 		private static Bitmap drawable2Bitmap(Drawable drawable) {
 			if (drawable == null) {
 				return null;
 			}
-			// å– drawable çš„é•¿å®½
+			// È¡ drawable µÄ³¤¿í
 			int w = drawable.getIntrinsicWidth();
 			int h = drawable.getIntrinsicHeight();
-			// å– drawable çš„é¢œè‰²æ ¼å¼
+			// È¡ drawable µÄÑÕÉ«¸ñÊ½
 			Bitmap.Config config = drawable.getOpacity() != PixelFormat.OPAQUE ? Bitmap.Config.ARGB_8888 : Bitmap.Config.RGB_565;
-			// å»ºç«‹å¯¹åº” bitmap
+			// ½¨Á¢¶ÔÓ¦ bitmap
 			Bitmap bitmap = Bitmap.createBitmap(w, h, config);
-			// å»ºç«‹å¯¹åº” bitmap çš„ç”»å¸ƒ
+			// ½¨Á¢¶ÔÓ¦ bitmap µÄ»­²¼
 			Canvas canvas = new Canvas(bitmap);
 			drawable.setBounds(0, 0, w, h);
-			// æŠŠ drawable å†…å®¹ç”»åˆ°ç”»å¸ƒä¸­
+			// °Ñ drawable ÄÚÈİ»­µ½»­²¼ÖĞ
 			drawable.draw(canvas);
 			return bitmap;
 		}
 
 		/*
-		 * Bitmap â†’ Drawable
+		 * Bitmap ¡ú Drawable
 		 */
 		@SuppressWarnings("deprecation")
 		private static Drawable bitmap2Drawable(Bitmap bm) {

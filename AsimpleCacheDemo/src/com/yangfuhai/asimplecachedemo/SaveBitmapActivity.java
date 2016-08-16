@@ -14,11 +14,11 @@ import android.widget.Toast;
 /**
  * 
  * @ClassName: SaveBitmapActivity
- * @Description: ç¼“å­˜bitmap
+ * @Description: »º´æbitmap
  * @Author Yoson Hao
  * @WebSite www.haoyuexing.cn
  * @Email haoyuexing@gmail.com
- * @Date 2013-8-7 ä¸‹åˆ5:20:37
+ * @Date 2013-8-7 ÏÂÎç5:20:37
  * 
  */
 public class SaveBitmapActivity extends Activity {
@@ -31,21 +31,21 @@ public class SaveBitmapActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_save_bitmap);
-		// åˆå§‹åŒ–æ§ä»¶
+		// ³õÊ¼»¯¿Ø¼ş
 		initView();
 
 		mCache = ACache.get(this);
 	}
 
 	/**
-	 * åˆå§‹åŒ–æ§ä»¶
+	 * ³õÊ¼»¯¿Ø¼ş
 	 */
 	private void initView() {
 		mIv_bitmap_res = (ImageView) findViewById(R.id.iv_bitmap_res);
 	}
 
 	/**
-	 * ç‚¹å‡»saveäº‹ä»¶
+	 * µã»÷saveÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -56,7 +56,7 @@ public class SaveBitmapActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»readäº‹ä»¶
+	 * µã»÷readÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -72,7 +72,7 @@ public class SaveBitmapActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»clearäº‹ä»¶
+	 * µã»÷clearÊÂ¼ş
 	 * 
 	 * @param v
 	 */

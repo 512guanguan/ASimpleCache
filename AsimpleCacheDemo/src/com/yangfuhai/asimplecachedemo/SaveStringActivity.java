@@ -12,11 +12,11 @@ import android.widget.Toast;
 /**
  * 
  * @ClassName: SaveStringActivity
- * @Description: ç¼“å­˜string
+ * @Description: »º´æstring
  * @Author Yoson Hao
  * @WebSite www.haoyuexing.cn
  * @Email haoyuexing@gmail.com
- * @Date 2013-8-7 ä¸‹åˆ9:59:43
+ * @Date 2013-8-7 ÏÂÎç9:59:43
  * 
  */
 public class SaveStringActivity extends Activity {
@@ -30,14 +30,14 @@ public class SaveStringActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_save_string);
-		// åˆå§‹åŒ–æ§ä»¶
+		// ³õÊ¼»¯¿Ø¼ş
 		initView();
 
 		mCache = ACache.get(this);
 	}
 
 	/**
-	 * åˆå§‹åŒ–æ§ä»¶
+	 * ³õÊ¼»¯¿Ø¼ş
 	 */
 	private void initView() {
 		mEt_string_input = (EditText) findViewById(R.id.et_string_input);
@@ -45,7 +45,7 @@ public class SaveStringActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»saveäº‹ä»¶
+	 * µã»÷saveÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -60,7 +60,7 @@ public class SaveStringActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»readäº‹ä»¶
+	 * µã»÷readÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -76,7 +76,7 @@ public class SaveStringActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»clearäº‹ä»¶
+	 * µã»÷clearÊÂ¼ş
 	 * 
 	 * @param v
 	 */

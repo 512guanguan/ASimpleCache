@@ -13,11 +13,11 @@ import android.graphics.drawable.Drawable;
 /**
  * 
  * @ClassName: SaveDrawableActivity
- * @Description: ç¼“å­˜drawable
+ * @Description: »º´ædrawable
  * @Author Yoson Hao
  * @WebSite www.haoyuexing.cn
  * @Email haoyuexing@gmail.com
- * @Date 2013-8-8 ä¸Šåˆ10:40:47
+ * @Date 2013-8-8 ÉÏÎç10:40:47
  * 
  */
 public class SaveDrawableActivity extends Activity {
@@ -30,21 +30,21 @@ public class SaveDrawableActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_save_drawable);
-		// åˆå§‹åŒ–æ§ä»¶
+		// ³õÊ¼»¯¿Ø¼ş
 		initView();
 
 		mCache = ACache.get(this);
 	}
 
 	/**
-	 * åˆå§‹åŒ–æ§ä»¶
+	 * ³õÊ¼»¯¿Ø¼ş
 	 */
 	private void initView() {
 		mIv_drawable_res = (ImageView) findViewById(R.id.iv_drawable_res);
 	}
 
 	/**
-	 * ç‚¹å‡»saveäº‹ä»¶
+	 * µã»÷saveÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -55,7 +55,7 @@ public class SaveDrawableActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»readäº‹ä»¶
+	 * µã»÷readÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -71,7 +71,7 @@ public class SaveDrawableActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»clearäº‹ä»¶
+	 * µã»÷clearÊÂ¼ş
 	 * 
 	 * @param v
 	 */

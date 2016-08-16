@@ -13,11 +13,11 @@ import android.widget.Toast;
 /**
  * 
  * @ClassName: SaveObjectActivity
- * @Description: ç¼“å­˜jsonobject
+ * @Description: »º´æjsonobject
  * @Author Yoson Hao
  * @WebSite www.haoyuexing.cn
  * @Email haoyuexing@gmail.com
- * @Date 2013-8-8 ä¸‹åˆ2:13:16
+ * @Date 2013-8-8 ÏÂÎç2:13:16
  * 
  */
 public class SaveObjectActivity extends Activity {
@@ -31,7 +31,7 @@ public class SaveObjectActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_save_object);
-		// åˆå§‹åŒ–æ§ä»¶
+		// ³õÊ¼»¯¿Ø¼ş
 		initView();
 
 		mCache = ACache.get(this);
@@ -42,7 +42,7 @@ public class SaveObjectActivity extends Activity {
 	}
 
 	/**
-	 * åˆå§‹åŒ–æ§ä»¶
+	 * ³õÊ¼»¯¿Ø¼ş
 	 */
 	private void initView() {
 		mTv_object_original = (TextView) findViewById(R.id.tv_object_original);
@@ -50,7 +50,7 @@ public class SaveObjectActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»saveäº‹ä»¶
+	 * µã»÷saveÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -59,7 +59,7 @@ public class SaveObjectActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»readäº‹ä»¶
+	 * µã»÷readÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -75,7 +75,7 @@ public class SaveObjectActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»clearäº‹ä»¶
+	 * µã»÷clearÊÂ¼ş
 	 * 
 	 * @param v
 	 */

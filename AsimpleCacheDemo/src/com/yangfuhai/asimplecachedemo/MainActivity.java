@@ -8,11 +8,11 @@ import android.view.View;
 /**
  * 
  * @ClassName: MainActivity
- * @Description: ä¸»ç•Œé¢
+ * @Description: Ö÷½çÃæ
  * @Author Yoson Hao
  * @WebSite www.haoyuexing.cn
  * @Email haoyuexing@gmail.com
- * @Date 2013-8-8 ä¸‹åˆ2:08:47
+ * @Date 2013-8-8 ÏÂÎç2:08:47
  * 
  */
 public class MainActivity extends Activity {

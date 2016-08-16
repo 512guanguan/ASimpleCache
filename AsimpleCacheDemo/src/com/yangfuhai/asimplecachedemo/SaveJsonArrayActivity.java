@@ -14,11 +14,11 @@ import android.app.Activity;
 /**
  * 
  * @ClassName: SaveJsonArrayActivity
- * @Description: ç¼“å­˜jsonarray
+ * @Description: »º´æjsonarray
  * @Author Yoson Hao
  * @WebSite www.haoyuexing.cn
  * @Email haoyuexing@gmail.com
- * @Date 2013-8-8 ä¸‹åˆ1:54:19
+ * @Date 2013-8-8 ÏÂÎç1:54:19
  * 
  */
 public class SaveJsonArrayActivity extends Activity {
@@ -32,7 +32,7 @@ public class SaveJsonArrayActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_save_jsonarray);
-		// åˆå§‹åŒ–æ§ä»¶
+		// ³õÊ¼»¯¿Ø¼ş
 		initView();
 
 		mCache = ACache.get(this);
@@ -61,7 +61,7 @@ public class SaveJsonArrayActivity extends Activity {
 	}
 
 	/**
-	 * åˆå§‹åŒ–æ§ä»¶
+	 * ³õÊ¼»¯¿Ø¼ş
 	 */
 	private void initView() {
 		mTv_jsonarray_original = (TextView) findViewById(R.id.tv_jsonarray_original);
@@ -69,7 +69,7 @@ public class SaveJsonArrayActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»saveäº‹ä»¶
+	 * µã»÷saveÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -78,7 +78,7 @@ public class SaveJsonArrayActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»readäº‹ä»¶
+	 * µã»÷readÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -94,7 +94,7 @@ public class SaveJsonArrayActivity extends Activity {
 	}
 
 	/**
-	 * ç‚¹å‡»clearäº‹ä»¶
+	 * µã»÷clearÊÂ¼ş
 	 * 
 	 * @param v
 	 */

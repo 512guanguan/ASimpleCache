@@ -18,11 +18,11 @@ import java.net.URL;
 /**
  * 
  * @ClassName: SaveMediaActivity
- * @Description: ç¼“å­˜bitmap
+ * @Description: »º´æbitmap
  * @Author Yoson Hao
  * @WebSite www.haoyuexing.cn
  * @Email haoyuexing@gmail.com
- * @Date 2013-8-7 ä¸‹åˆ5:20:37
+ * @Date 2013-8-7 ÏÂÎç5:20:37
  * 
  */
 public class SaveMediaActivity extends Activity implements Runnable {
@@ -43,14 +43,14 @@ public class SaveMediaActivity extends Activity implements Runnable {
 	}
 
 	/**
-	 * åˆå§‹åŒ–æ§ä»¶
+	 * ³õÊ¼»¯¿Ø¼ş
 	 */
 	private void initView() {
         text = (TextView) findViewById(R.id.text);
 	}
 
 	/**
-	 * ç‚¹å‡»saveäº‹ä»¶
+	 * µã»÷saveÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -60,7 +60,7 @@ public class SaveMediaActivity extends Activity implements Runnable {
     }
 
 	/**
-	 * ç‚¹å‡»readäº‹ä»¶
+	 * µã»÷readÊÂ¼ş
 	 * 
 	 * @param v
 	 */
@@ -85,7 +85,7 @@ public class SaveMediaActivity extends Activity implements Runnable {
     }
 
 	/**
-	 * ç‚¹å‡»clearäº‹ä»¶
+	 * µã»÷clearÊÂ¼ş
 	 * 
 	 * @param v
 	 */
